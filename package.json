@@ -1,0 +1,22 @@
+{
+  "name": "taxi--artmood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/scss/main.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mubarizmayilzada/Taxi--Artmood.git"
+  },
+  "author": "marz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mubarizmayilzada/Taxi--Artmood/issues"
+  },
+  "homepage": "https://github.com/mubarizmayilzada/Taxi--Artmood#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
