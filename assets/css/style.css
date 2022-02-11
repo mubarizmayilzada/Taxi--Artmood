@@ -1,3 +1,15 @@
+#booknow {
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  padding: 15px 20px;
+  background-color: #f8c12c;
+  transition: all 0.5s ease; }
+  #booknow:hover {
+    background-color: #c59614; }
+
 header nav {
   width: 78%;
   position: fixed;
@@ -25,8 +37,6 @@ header nav {
 header section {
   height: 100vh;
   position: relative; }
-  header section ul {
-    height: 100vh; }
   header section img {
     position: absolute;
     top: 0px;
@@ -60,17 +70,331 @@ header section {
       margin-top: 20px;
       color: white;
       font-size: 18px; }
-    header section .content a {
+
+.about-us-index {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .about-us-index .left-aside-about-us {
+    width: 48%; }
+    .about-us-index .left-aside-about-us span {
       display: inline-block;
-      margin-top: 25px;
-      border-radius: 10px;
       font-size: 16px;
+      color: #c59614;
+      margin-bottom: 7px; }
+    .about-us-index .left-aside-about-us h2 {
+      font-weight: 500;
+      font-size: 40px;
+      font-family: 'Fraunces', serif;
+      margin-bottom: 15px; }
+    .about-us-index .left-aside-about-us p {
+      font-size: 14px;
+      color: #aaa; }
+  .about-us-index .right-aside-about-us {
+    width: 48%; }
+    .about-us-index .right-aside-about-us img {
+      width: 100%;
+      border-radius: 5px; }
+
+.about-cards-index {
+  margin-bottom: 100px; }
+  .about-cards-index ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .about-cards-index ul li {
+      text-align: center;
+      width: 400px;
+      height: 250px;
+      border-radius: 7px;
+      background-color: #ffbc02; }
+      .about-cards-index ul li .about-us-index-icon img {
+        margin-top: 40px;
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 50%; }
+      .about-cards-index ul li span {
+        color: white;
+        font-size: 25px; }
+
+.customer-review-wrapper {
+  background-color: #202020;
+  border-radius: 25px;
+  padding: 100px 0;
+  margin-bottom: 80px; }
+  .customer-review-wrapper .customer-review ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .customer-review-wrapper .customer-review ul li {
+      background-color: black;
+      border-radius: 11px;
+      width: 373px;
+      padding: 30px; }
+      .customer-review-wrapper .customer-review ul li p {
+        color: silver;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 25px; }
+      .customer-review-wrapper .customer-review ul li .review {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .customer-review-wrapper .customer-review ul li .review .customer {
+          display: flex; }
+        .customer-review-wrapper .customer-review ul li .review__img img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-right: 20px; }
+        .customer-review-wrapper .customer-review ul li .review__about {
+          align-items: center;
+          position: relative; }
+          .customer-review-wrapper .customer-review ul li .review__about strong {
+            margin-top: 9px;
+            white-space: nowrap;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            display: block;
+            position: absolute;
+            top: 0; }
+          .customer-review-wrapper .customer-review ul li .review__about span {
+            margin-bottom: 9px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            color: silver;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 21px; }
+        .customer-review-wrapper .customer-review ul li .review__icon i {
+          font-size: 60px;
+          color: #FFBA00;
+          margin-right: 10px; }
+
+@media screen and (max-width: 1025px) {
+  .customer-review-wrapper .customer-review ul {
+    display: block !important; }
+    .customer-review-wrapper .customer-review ul li {
+      width: 100% !important; }
+      .customer-review-wrapper .customer-review ul li:not(:last-child) {
+        margin-bottom: 30px; } }
+
+.section-title {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto; }
+  .section-title h2 {
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 70px;
+    color: white; }
+    .section-title h2::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 130px;
+      background-color: #FFBA00;
+      margin-bottom: 40px; }
+  .section-title p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: silver;
+    margin-bottom: 30px; }
+
+@media screen and (max-width: 426px) {
+  .section-title {
+    width: 100% !important; }
+    .section-title h2 {
+      margin-top: 30px;
+      font-size: 25px !important;
+      line-height: 25px !important; }
+    .section-title p {
+      font-size: 14px !important;
+      line-height: 20px !important; } }
+
+@media screen and (max-width: 426px) {
+  .section-title {
+    width: 100% !important; }
+    .section-title h2 {
+      margin-top: 30px;
+      font-size: 20px !important;
+      line-height: 20px !important;
+      padding-bottom: 50px !important; }
+      .section-title h2::before {
+        margin-bottom: 20px !important; }
+    .section-title p {
+      font-size: 12px !important;
+      line-height: 16px !important; } }
+
+.faqs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .faqs .faq {
+    width: 550px;
+    padding: 0 40px 40px 0;
+    margin-bottom: 20px; }
+    .faqs .faq div {
+      display: flex; }
+      .faqs .faq div h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 20px; }
+      .faqs .faq div i {
+        color: #FFBA00;
+        font-size: 25px;
+        margin-right: 10px; }
+    .faqs .faq p {
+      margin-left: 40px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #9c9c9c; }
+
+@media screen and (max-width: 1024px) {
+  .faqs .faq {
+    width: 800px;
+    padding-right: 0; }
+    .faqs .faq p {
+      text-align: right; } }
+
+@media screen and (max-width: 426px) {
+  .faqs .faq div h2 {
+    font-size: 18px; }
+  .faqs .faq p {
+    text-align: left;
+    font-size: 14px; } }
+
+@media screen and (max-width: 321px) {
+  .faqs .faq div h2 {
+    font-size: 15px; }
+  .faqs .faq p {
+    text-align: left;
+    font-size: 13px; } }
+
+footer {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 80px 0 !important;
+  background-color: black; }
+  footer .footer {
+    display: flex; }
+    footer .footer__logo {
+      width: 315px;
+      margin-right: 40px; }
+      footer .footer__logo .logo {
+        color: #c59614;
+        font-weight: 700;
+        font-size: 30px; }
+      footer .footer__logo .footer-about {
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-top: 20px; }
+    footer .footer__pages {
+      width: 230px; }
+      footer .footer__pages h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 35px;
+        color: white;
+        margin-bottom: 15px; }
+      footer .footer__pages ul li {
+        line-height: 35px; }
+        footer .footer__pages ul li a {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          color: white; }
+          footer .footer__pages ul li a:hover {
+            color: #FFBA00; }
+    footer .footer__about {
+      width: 275px; }
+      footer .footer__about ul li:not(:last-child) {
+        margin-bottom: 35px; }
+      footer .footer__about ul li h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 35px;
+        color: white;
+        margin-bottom: 15px; }
+      footer .footer__about ul li span {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: white; }
+        footer .footer__about ul li span i {
+          margin-right: 5px;
+          font-size: 16px;
+          color: #FFBA00; }
+    footer .footer__social ul li:not(:last-child) {
+      margin-bottom: 35px; }
+    footer .footer__social ul li h2 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 35px;
       color: white;
-      padding: 15px 20px;
-      background-color: #f8c12c;
-      transition: all 0.5s ease; }
-      header section .content a:hover {
-        background-color: #c59614; }
+      margin-bottom: 15px; }
+    footer .footer__social ul li span {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: white; }
+      footer .footer__social ul li span i {
+        margin-right: 5px;
+        font-size: 16px;
+        color: #FFBA00; }
+    footer .footer__social ul li .social-links {
+      height: 0px;
+      display: flex; }
+      footer .footer__social ul li .social-links li:not(:last-child) {
+        margin-right: 30px; }
+      footer .footer__social ul li .social-links li a i {
+        font-size: 20px;
+        color: #FFBA00; }
+        footer .footer__social ul li .social-links li a i:hover {
+          color: white; }
+
+@media screen and (max-width: 769px) {
+  .footer {
+    display: block !important; }
+    .footer__logo {
+      width: 100% !important;
+      margin-bottom: 50px !important;
+      padding-bottom: 50px !important;
+      border-bottom: 1px solid white; }
+    .footer__pages {
+      width: 100% !important;
+      margin-bottom: 50px !important;
+      border-bottom: 1px solid white;
+      padding-bottom: 50px !important; }
+    .footer__about {
+      width: 100% !important;
+      padding-bottom: 50px !important;
+      margin-bottom: 50px !important;
+      border-bottom: 1px solid white; }
+    .footer__social {
+      padding-bottom: 50px !important;
+      width: 100% !important;
+      border-bottom: 1px solid white; } }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
