@@ -701,7 +701,8 @@ header #contact-header {
       font-size: 14px;
       color: white;
       margin-top: 35px;
-      width: 30%; }
+      width: 30%;
+      white-space: nowrap; }
 
 .booking-ads {
   position: relative;
@@ -740,6 +741,21 @@ header #contact-header {
     font-size: 23px; }
     .booking-ads a span {
       color: #ffbc02; }
+
+@media screen and (max-width: 768px) {
+  .booking-ads h2 {
+    font-size: 20px; }
+  .booking-ads a {
+    font-size: 18px; }
+  .booking form .custom-row-1,
+  .booking form .custom-row-2 {
+    display: block;
+    text-align: left; }
+    .booking form .custom-row-1 > div,
+    .booking form .custom-row-2 > div {
+      width: 100%; }
+  .booking form button {
+    width: 50%; } }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

@@ -41,6 +41,7 @@
             color: white;
             margin-top: 35px;
             width: 30%;
+            white-space: nowrap;
         }
     }
 }
@@ -86,6 +87,33 @@
         font-size: 23px;
         span{
             color: #ffbc02;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .booking-ads{
+        h2{
+            font-size: 20px;
+        }
+        a{
+            font-size: 18px;
+        }
+    }
+    .booking{
+        form{
+            .custom-row-1,
+            .custom-row-2{
+                display: block;
+                &>div{
+                    width: 100%;
+                }
+                text-align: left;
+            }
+            button{
+                width: 50%;
+            }
         }
     }
 }
